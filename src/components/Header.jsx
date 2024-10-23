@@ -14,7 +14,7 @@ const Header = () => {
 
     <div  id="darkmode-toggle-switch" className="btn-toggle-switch">
         <span className="label">dark mode</span>
-        <label for="dark mode-switch" className="toggle-switch">
+        <label htmlFor="dark mode-switch" className="toggle-switch">
             <input id="dark mode-switch" type="checkbox"/>
             <span className="slider round"></span>
 
