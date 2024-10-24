@@ -1,4 +1,8 @@
 import React from 'react'
+import Ikon1 from '../assets/Logos/ikon1.svg'
+import Ikon2 from '../assets/Logos/ikon2.svg'
+import Pil from '../assets/Logos/Pil.svg'
+import Contact from '../assets/Logos/contacts.svg'
 
 const Contacts = () => {
   return (
@@ -9,7 +13,7 @@ const Contacts = () => {
 
 
 
-<img src="Logos/contacts.svg" alt="" className="contacts-2"/>
+<img src={Contact} alt="" className="contacts-2"/>
 </div>
 
 <div className="nedre-del">
@@ -18,12 +22,12 @@ const Contacts = () => {
 <div className="texter">
 
        <div className="text-1">
-       <img src="Logos/ikon1.svg" alt=""/>
+       <img src={Ikon1} alt=""/>
    <p>Manage your payments online. <br/> Mollis congue egestas egestas <br/> fermentum fames.</p>
    </div>
 
    <div className="text-2">
-       <img src="Logos/ikon2.svg" alt=""/>
+       <img src={Ikon2} alt=""/>
    <p>A elementur and imperdiet enim, <br/> pretium etiam facilisi aenean <br/> quam mauris.</p> 
    </div>
 </div>
@@ -32,7 +36,7 @@ const Contacts = () => {
    
   
 <button className="btn-learn-more">Learn more
-   <img src="Logos/Pil.svg" alt=""/>
+   <img src={Pil} alt=""/>
 </button>
 
 </div>
