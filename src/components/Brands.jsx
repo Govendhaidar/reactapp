@@ -24,7 +24,7 @@ const Brands = () => {
                         <img src="Logos/logo6.svg" alt=""/>
                     </div>
                 </div>
-            </section>
+     </section>
     </div>
   )
 }

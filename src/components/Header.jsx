@@ -1,4 +1,5 @@
 import React from 'react'
+import LogoType from '../assets/Logos/Link.svg'
 
 const Header = () => {
   return (
@@ -6,7 +7,7 @@ const Header = () => {
        <header>
 
 <div className="container">
-    <a id="logo" href="index.html"><img src="Link.svg" alt=""/></a>
+    <a id="logo" href="index.html"><img src={LogoType} alt=""/></a>
 
     <nav id="main-menu" className="navbar">
         <a className="nav-link" href="#">features</a>

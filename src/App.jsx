@@ -16,17 +16,17 @@ function App() {
 
   return (
     <>
-     <Header/>
-      <Hero/>
-      <Brands/>
-      <Features/>
-      <Howitworks/>
-      <Makemoney/>
-      <Contacts/>
-      <Clients/>
-      <Faqs/>
-      <Subscribe/>
-      <Footer/>
+     <Header />
+      <Hero />
+      <Brands />
+      <Features />
+      <Howitworks />
+      <Makemoney />
+      <Contacts />
+      <Clients />
+      <Faqs />
+      <Subscribe />
+      <Footer />
       
      
     </>
