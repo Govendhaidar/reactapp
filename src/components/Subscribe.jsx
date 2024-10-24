@@ -1,4 +1,6 @@
 import React from 'react'
+import Klocka from '../assets/Logos/klocka.svg'
+import Mejl from '../assets/Logos/bx-envelope.svg'
 
 const Subscribe = () => {
   return (
@@ -6,7 +8,7 @@ const Subscribe = () => {
       <section className="subscribe">
                     <div className="container-6">
                         <div className="klocka">
-                           <img src="Logos/klocka.svg" alt=""/> 
+                           <img src={Klocka} alt=""/> 
                         </div>
                         
                         <div className="subscribe">
@@ -16,7 +18,7 @@ const Subscribe = () => {
 
                         <div className="email">
                             <form className="ruta" action="method" method="get">
-                                <img className="msg" src="Logos/bx-envelope.svg" alt=""/>
+                                <img className="msg" src={Mejl} alt=""/>
                                 <input type="email" placeholder="Your Email" className="input"/>
                                 <button className="knapp">Subscribe</button>
                             </form>
