@@ -1,4 +1,7 @@
 import React from 'react'
+import Vänster from '../assets/Logos/iphone vänster.svg'
+import Mitten from '../assets/Logos/iphone mitten.svg'
+import Höger from '../assets/Logos/iphone höger.svg'
 
 const Howitworks = () => {
   return (
@@ -11,15 +14,15 @@ const Howitworks = () => {
 
 <div className="container-2">
     <div className="iphones">
-      <img src="Logos/iPhone vänster.svg" alt="vänster" className="phone-img"/>  
+      <img src={Vänster} alt="vänster" className="phone-img"/>  
     </div>
 
     <div className="iphones">
-        <img src="Logos/iPhone mitten.svg" alt="mitten" className="phone-img"/>  
+        <img src={Mitten} alt="mitten" className="phone-img"/>  
       </div>
     
       <div className="iphones">
-        <img src="Logos/iPhone höger.svg" alt="höger" className="phone-img"/>  
+        <img src={Höger} alt="höger" className="phone-img"/>  
       </div>
    </div>
 
