@@ -11,6 +11,7 @@ import Howitworks from './components/Howitworks'
 import Makemoney from './components/Makemoney'
 import Subscribe from './components/Subscribe'
 
+
 function App() {
   
 
@@ -27,6 +28,7 @@ function App() {
       <Faqs />
       <Subscribe />
       <Footer />
+      
       
      
     </>

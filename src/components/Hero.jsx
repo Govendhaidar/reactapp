@@ -15,8 +15,8 @@ const Hero = () => {
                 <div className="content">
                     <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
                     <div className="buttons">
-                        <a className="btn-download-app" href="#"><img src={Appstore} alt="appstore"/></a>
-                        <a className="btn-download-app" href="#"><img src={Googleplay} alt="google play"/></a>
+                        <a id= "appStoreLogo" className="btn-download-app" href="#"><img src={Appstore} alt="appstore"/></a>
+                        <a id= "googlePlayLogo" className="btn-download-app" href="#"><img src={Googleplay} alt="google play"/></a>
                     </div>
 
                    <a href="#"className="discover-more">

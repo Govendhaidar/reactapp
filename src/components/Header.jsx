@@ -1,5 +1,6 @@
 import React from 'react'
 import LogoType from '../assets/Logos/Link.svg'
+import DarkMode from '../components/DarkMode'
 
 const Header = () => {
   return (
@@ -10,17 +11,13 @@ const Header = () => {
     <a id="logo" href="index.html"><img src={LogoType} alt=""/></a>
 
     <nav id="main-menu" className="navbar">
-        <a className="nav-link" href="#">features</a>
+        <a className="nav-link" href="#">Features</a>
+        <a className="nav-link-1" href="#">Contact</a>
     </nav>
 
-    <div  id="darkmode-toggle-switch" className="btn-toggle-switch">
-        <span className="label">dark mode</span>
-        <label htmlFor="dark mode-switch" className="toggle-switch">
-            <input id="dark mode-switch" type="checkbox"/>
-            <span className="slider round"></span>
+    <DarkMode />
 
-        </label>
-    </div>
+    
 
     <a id="auth-signin" href="#" className="btn-primary">
         <i className="fa-thin fa-user-large"></i>
