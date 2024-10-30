@@ -1,14 +1,14 @@
 import './App.css'
 import Brands from './components/Brands'
 import Clients from './components/Clients'
-import Contacts from './components/Contacts'
+import DarkMode from './components/DarkMode'
 import Faqs from './components/Faqs'
 import Features from './components/Features'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Howitworks from './components/Howitworks'
-import Makemoney from './components/Makemoney'
+import MakeMoney from './components/Makemoney'
 import Subscribe from './components/Subscribe'
 
 
@@ -22,12 +22,12 @@ function App() {
       <Brands />
       <Features />
       <Howitworks />
-      <Makemoney />
-      <Contacts />
+      <MakeMoney />
       <Clients />
       <Faqs />
       <Subscribe />
       <Footer />
+      
       
       
      

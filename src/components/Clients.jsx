@@ -12,8 +12,8 @@ const Clients = () => {
                     </div>
 
                     <div className="rutor">
-                            <img src={Recension} alt=""/>
-                            <img src={Recension} alt=""/>
+                            <img id="ruta1" src={Recension} alt=""/>
+                            <img id="ruta2" src={Recension1} alt=""/>
                     </div>
 
 

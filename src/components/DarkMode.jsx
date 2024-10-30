@@ -1,4 +1,9 @@
-import React, { useState } from 'react';
+import React, {  useEffect, useState } from 'react';
+import imgRuta1 from '../assets/Logos/ruta1.svg'
+import imgRuta2 from '../assets/Logos/ruta2.svg'
+import imgRuta1dark from '../assets/Logos/ruta1-dark.svg'
+import imgRuta2dark from '../assets/Logos/ruta2-dark.svg'
+
 
 
 
@@ -7,18 +12,40 @@ const DarkMode = () => {
         const toggleDarkMode = () => {
           const newMode = !isDarkMode; 
           setIsDarkMode(newMode)
+        
 
           if(newMode){
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
+           
 
           } else{
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
           }
-        }
+        };
  
+ useEffect(() => {
+   const savedTheme = localStorage.getItem('theme')
+   if(savedTheme === 'dark') {
+   document.documentElement.setAttribute('data-theme', 'dark');
+   setIsDarkMode(true)
 
+  } else{
+    document.documentElement.setAttribute('data-theme', 'light');
+    setIsDarkMode(false)
+  }
+
+  const ruta1 = document.getElementById('ruta1');
+        if (ruta1) {
+            ruta1.src = isDarkMode ? imgRuta1dark : imgRuta1;
+        }
+        const ruta2 = document.getElementById('ruta2');
+        if (ruta2) {
+            ruta2.src = isDarkMode ? imgRuta2dark : imgRuta2;
+        }
+
+ }, [isDarkMode]) 
 
        
   return (
@@ -36,7 +63,7 @@ const DarkMode = () => {
 
     </label>
 </div>
-  )
-}
+  );
+};
 
-export default DarkMode
+export default DarkMode;

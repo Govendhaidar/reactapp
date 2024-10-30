@@ -6,7 +6,7 @@ import Höger from '../assets/Logos/iphone höger.svg'
 const Howitworks = () => {
   return (
     <div>
-       <section id="how-it-works">
+       <section className="doesitwork" id="how-it-works">
 
 <div className="h2">
     <h2>How Does It Work?</h2>
