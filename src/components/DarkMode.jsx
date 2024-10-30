@@ -3,6 +3,9 @@ import imgRuta1 from '../assets/Logos/ruta1.svg'
 import imgRuta2 from '../assets/Logos/ruta2.svg'
 import imgRuta1dark from '../assets/Logos/ruta1-dark.svg'
 import imgRuta2dark from '../assets/Logos/ruta2-dark.svg'
+import imgSiliconLight from '../assets/Logos/Link.svg'
+import imgSiliconDark from '../assets/Logos/silicon-light.svg'
+
 
 
 
@@ -44,6 +47,16 @@ const DarkMode = () => {
         if (ruta2) {
             ruta2.src = isDarkMode ? imgRuta2dark : imgRuta2;
         }
+
+        
+  const logo = document.getElementById('logo');
+  if (logo) {
+      logo.src = isDarkMode ? imgSiliconDark : imgSiliconLight;
+  }
+
+ 
+
+      
 
  }, [isDarkMode]) 
 

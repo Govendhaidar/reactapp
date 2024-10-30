@@ -2,24 +2,6 @@
 
 
 
-/* :root {
-    --color-dark: #0B0F19;
-    --color-primary: #6366F1;
-    --color-gray600: #9397AD;
-    --color-white: #ffffff;
-    --color-gray200: #eff2fc;
-    --color-gray300: #e2e5f1; 
-    --color-gray900: #0b0f19;
-    --color-gray700: #565973;
-    --color-gray100: #f3f6ff;
-    --color-gray500: #b4b7c9;
-    --color-green: #22c55e;
-    --color-gray800: #33354d;
-
-    --container-padding: 1rem;
-    --transition-time: all 0.2s;
-} */
-
 [data-theme="light"] {
     --color-dark: #0B0F19;
     --color-primary: #6366F1;
@@ -88,59 +70,6 @@ body {
     margin-bottom: 8rem;
 }
 
-
-
-/* :root {
-    --color-dark: #0B0F19;
-    --color-primary: #6366F1;
-    --color-gray600: #9397AD;
-    --color-white: #ffffff;
-    --color-gray200: #eff2fc;
-    --color-gray300: #e2e5f1; 
-    --color-gray900: #0b0f19;
-    --color-gray700: #565973;
-    --color-gray100: #f3f6ff;
-    --color-gray500: #b4b7c9;
-    --color-green: #22c55e;
-    --color-gray800: #33354d;
-
-    --container-padding: 1rem;
-    --transition-time: all 0,2s;
-
-    
-}
-
-:root [data-theme="light"] {
-    --color-bg: var(--color-blue);
-    --color-bg-secondary: var(--color-gray100);
-    --color-white-to-gray: var(--color-white);
-    --accordion-background: #fff;
- 
-    --color-text-heading: var(--color-gray900);
-    --color-text-heading-2: var(--color-gray800);
-    --color-text: var(--color-gray600);
-    --border-color: var(--color-gray300);
-    --btn-store-bg: var(--color-gray900);
-}
-
-:root[data-theme="dark"] {
-
-   
-
-    
-    --color-bg: var(--color-gray900);
-    
-    --color-white-to-gray: rgba(255, 255, 255, 0.08);
-    --color-text-heading: var(--color-white);
-    --color-text-heading-2: var(--color-gray100);
-    --color-text: var(--color-gray300);
-    --border-color: rgba(255, 255, 255, 0.08);
-    --btn-store-bg: var(--color-gray200);
-    --accordion-background: rgba(255, 255, 255, 0.04);
-
-    
-    
-} */
 
 
 
@@ -258,9 +187,8 @@ a:hover {
     align-items: center;
     border-radius: 50%;
     border: 1px solid var(--color-gray700);
-    background-color: var(--color-white);
-    /* background-color: var(--color-bg);
-    color: var(--color-text); */
+    background-color: var(--color-bg);
+    color: var(--color-text);
 }
 
 .btn-toggle-switch {
@@ -342,6 +270,7 @@ a:hover {
     color: var(--color-dark);
     font-weight: 600;
     text-decoration: none;
+    color: var(--color-text);
     
     
 }
@@ -616,6 +545,7 @@ display: block;
 
             .discover-more {
                 color: var(--color-dark);
+                color: var(--color-text);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -849,7 +779,6 @@ display: block;
         color: var(--color-gray900);
         font-size: 32px;
         font-weight: 800;
-        background-color: var(--color-bg);
         color: var(--color-text);
     }
 
@@ -987,6 +916,8 @@ display: block;
     margin-right: 5rem;
     margin-left: 5rem;
     border-radius: 15px;
+    padding-left: 10rem;
+    padding-right: 10rem;
 
 
     .container-6 {
@@ -997,8 +928,7 @@ display: block;
 
     .klocka {
         display: flex;
-        
-
+        margin-left: 1rem;
     }
 
     .msg {
@@ -1021,6 +951,7 @@ display: block;
             padding-left: 2rem;
             border-radius: 5px 0px 0px 5px;
             border: 1px solid rgba(128, 128, 128, 0.235);
+            background-color: var(--color-gray100);
         }   
 
         .knapp {
@@ -1102,7 +1033,7 @@ justify-content: center;
         margin-left: 2rem;
         font-weight: 600;
         font-size: 14px;
-        color: var(--color-text);
+        
 
     }
 
