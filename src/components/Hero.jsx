@@ -1,6 +1,6 @@
 import React from 'react'
-import Appstore from '../assets/Logos/appstore.svg'
-import Googleplay from '../assets/Logos/googleplay.svg'
+import Appstore from '../assets/Logos/appstore-light.svg'
+import Googleplay from '../assets/Logos/googleplay-light.svg'
 import Mybudget from '../assets/Logos/iphone-mybudget.svg'
 import Iphone from '../assets/Logos/iphone.svg'
 
@@ -15,8 +15,8 @@ const Hero = () => {
                 <div className="content">
                     <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
                     <div className="buttons">
-                        <a id= "appStoreLogo" className="btn-download-app" href="#"><img src={Appstore} alt="appstore"/></a>
-                        <a id= "googlePlayLogo" className="btn-download-app" href="#"><img src={Googleplay} alt="google play"/></a>
+                        <a className="btn-download-app" href="#"><img id= "appStoreLogo" src={Appstore} alt="appstore"/></a>
+                        <a className="btn-download-app" href="#"><img id= "googlePlayLogo" src={Googleplay} alt="google play"/></a>
                     </div>
 
                    <a href="#"className="discover-more">

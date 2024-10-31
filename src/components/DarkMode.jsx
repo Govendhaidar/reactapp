@@ -5,6 +5,10 @@ import imgRuta1dark from '../assets/Logos/ruta1-dark.svg'
 import imgRuta2dark from '../assets/Logos/ruta2-dark.svg'
 import imgSiliconLight from '../assets/Logos/Link.svg'
 import imgSiliconDark from '../assets/Logos/silicon-light.svg'
+import AppstoreLight from '../assets/Logos/appstore-light.svg'
+import GoogleplayLight from '../assets/Logos/googleplay-light.svg'
+import AppstoreDark from '../assets/Logos/appstore-dark.svg'
+import GoogleplayDark from '../assets/Logos/googleplay-dark.svg'
 
 
 
@@ -53,6 +57,15 @@ const DarkMode = () => {
   if (logo) {
       logo.src = isDarkMode ? imgSiliconDark : imgSiliconLight;
   }
+
+  const appStoreLogo = document.getElementById('appStoreLogo');
+        if (appStoreLogo) {
+            appStoreLogo.src = isDarkMode ? AppstoreDark : AppstoreLight;
+        }
+        const googlePlayLogo = document.getElementById('googlePlayLogo');
+        if (googlePlayLogo) {
+            googlePlayLogo.src = isDarkMode ? GoogleplayDark : GoogleplayLight;
+        }
 
  
 

@@ -151,7 +151,7 @@ a:hover {
 }
 
 .btn-download-app {
-    background-color: var(--color-dark);
+    /* background-color: var(--color-dark); */
     color: var(--color-white);
     border-radius: 8px;
     padding: 12px 25px;
@@ -913,11 +913,12 @@ display: block;
     align-items: center;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     border-radius: 15px;
     padding-left: 10rem;
     padding-right: 10rem;
+   
 
 
     .container-6 {
@@ -928,7 +929,7 @@ display: block;
 
     .klocka {
         display: flex;
-        margin-left: 1rem;
+        margin-left: 10rem;
     }
 
     .msg {
@@ -962,6 +963,8 @@ display: block;
             padding: 10px;
             font-size: 16px;
             font-weight: 800;
+            margin-right: 3rem;
+           
 
 
         }
