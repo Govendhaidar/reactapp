@@ -1,7 +1,6 @@
 import './App.css'
 import Brands from './components/Brands'
 import Clients from './components/Clients'
-import DarkMode from './components/DarkMode'
 import Faqs from './components/Faqs'
 import Features from './components/Features'
 import Footer from './components/Footer'

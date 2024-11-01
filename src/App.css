@@ -3,7 +3,7 @@
 
 
 [data-theme="light"] {
-    --color-dark: #0B0F19;
+    --color-dark:    #0B0F19;
     --color-primary: #6366F1;
     --color-gray600: #9397AD;
     --color-white:   #ffffff;
@@ -32,17 +32,17 @@
 
 [data-theme="dark"] {
 
-    --color-dark: #0B0F19;
+    --color-dark:    #0B0F19;
     --color-primary: #6366F1;
     --color-gray600: #9397AD;
-    --color-white: #ffffff;
+    --color-white:   #ffffff;
     --color-gray200: #eff2fc;
     --color-gray300: #e2e5f1; 
     --color-gray900: #0b0f19;
     --color-gray700: #565973;
     --color-gray100: rgba(243, 246, 255, 0.059);
     --color-gray500: #b4b7c9;
-    --color-green: #22c55e;
+    --color-green:   #22c55e;
     --color-gray800: #33354d;
 
 
@@ -151,7 +151,6 @@ a:hover {
 }
 
 .btn-download-app {
-    /* background-color: var(--color-dark); */
     color: var(--color-white);
     border-radius: 8px;
     padding: 12px 25px;
@@ -1105,15 +1104,18 @@ justify-content: center;
             border: none;
             font-weight: 600;
             color: var(--color-gray900);
-            box-shadow: 3px 3px gainsboro;
+            box-shadow: 3px 3px var(--color-gray100);
             border-radius: 10px;
-            background-color: var(--color-white);
+            background-color: rgb(243, 246, 255, 0.059);
+            color: var(--color-text);
+
             
             
         }
 
         .arrow-1 {
             color: var(--color-gray800);
+            color: var(--color-text);
         }
 
         .btn-circle {
@@ -1130,9 +1132,8 @@ justify-content: center;
             border-radius: 50%;
             border: none;
             background-color: var(--color-primary);
-            position: absolute;
-            bottom: 1rem;
-            left: -2.7rem;
+            position: relative;
+            bottom: 1.2rem;
         }
 
         .arrow-2 {
@@ -1146,6 +1147,7 @@ justify-content: center;
         font-size: 16px;
         font-weight: 600;
         color: var(--color-gray900);
+        color: var(--color-text);
        }
 
        .p {
