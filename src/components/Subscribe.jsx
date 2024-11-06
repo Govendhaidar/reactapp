@@ -10,13 +10,31 @@ const Subscribe = () => {
     setformData({...formData, [name]: value})
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
     alert('Thank You.')
 
-  }
 
+    const res = await fetch ('https://win24-assignment.azurewebsites.net/api/forms/subscribe', {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/Json'
+
+
+      },
+      body: JSON.stringify(formData)
+    })
+
+
+
+    if (res.ok) {
+      console.log("din validering lyckades")
+    } else {
+      console.log("din validering misslyckades")
+    }
+
+ }
   return (
     <div>
                 <section className="subscribe">
@@ -31,7 +49,7 @@ const Subscribe = () => {
                         
 
                         <div className="email">
-                            <form onSubmit={handleSubmit} className="ruta" action="method" method="get">
+                            <form onSubmit={handleSubmit} className="ruta">
                                 <img className="msg" src={Mejl} alt=""/>
                                 <input type="email" name='email' value={formData.email} onChange={handleChange} required placeholder="Your Email" className="input"/>
                                 <button type='submit' className="knapp">Subscribe</button>
