@@ -1,10 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
 const Faqs = () => {
     const [openIndex, setOpenIndex] = useState(null);
+    const [faqs, setFaqs] = useState([]);
     const toggleFaqs = (index) => {
         setOpenIndex(openIndex === index ? null : index);
+
     }
+
+    useEffect( () => {
+        axios.get('https://win24-assignment.azurewebsites.net/api/faq')
+        .then(response => {
+            setFaqs(response.data);
+        })
+    }, []);
     
 
 
@@ -34,124 +44,27 @@ const Faqs = () => {
 </div>
 
 <div className="container-8">
- <div className="item">
-     <button className="question" onClick={() => toggleFaqs(0)}>
+    {faqs.map((faq, index) => (
+
+        <div key={faq.id} className="item">
+     <button className="question" onClick={() => toggleFaqs(index)}>
         <div>
-            <h3 className='h3'>Is any of my personal information stored in the App?</h3>
-            {openIndex === 0 && (
+            <h3 className='h3'>{faq.title}</h3>
+            {openIndex === index && (
                 <div className='content'>
-                    <p className='p'>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p className='p'>{faq.content}</p>
                 </div>
             )}
         </div>
          <a href="#" className="arrow-1">
              <span className="btn-circle">
-                 <i className={`fa-solid fa-chevron-${openIndex === 0 ? "up" : "down"}`}></i>
+                 <i className={`fa-solid fa-chevron-${openIndex === index ? "up" : "down"}`}></i>
              </span>
          </a>
      </button>
 
  </div>
-
- <div className="item">
-     <button className="question" onClick={() => toggleFaqs(1)}>
-     <div>
-            <h3 className='h3'>What formats can I download my transaction history in?</h3>
-            {openIndex === 1 && (
-                <div className='content'>
-                    <p className='p'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            )}
-        </div>
-         <a href="#" className="arrow-1">
-             <span className="btn-circle">
-                 <i className={`fa-solid fa-chevron-${openIndex === 1 ? "up" : "down"}`}></i>
-             </span>
-         </a>
-     </button>
-
- </div>
-
- <div className="item">
-     
-     <button className="question" onClick={() => toggleFaqs (2)}>
-         <div>
-             <h3 className="h3">Can I schedule future transfers?</h3>
-             {openIndex === 2 && (
-                <div className='content'>
-                    <p className="p">Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet  <br/> pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan <br/> lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing <br/> euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
-
-                </div>
-             )}
-         </div>
-         <a href="#" className="arrow-2">
-             <span className="btn-circle-1">
-                 <i className={`fa-solid fa-chevron-${openIndex === 2 ? "up" : "down"}`}></i>
-             </span>
-         </a>
-         
-         
-     </button>
-     
-
- </div>
-
- <div className="item">
-     <button className="question" onClick={() => toggleFaqs(3)}>
-     <div>
-            <h3 className='h3'>When can I use Banking App services?</h3>
-            {openIndex === 3 && (
-                <div className='content'>
-                    <p className='p'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste.</p>
-                </div>
-            )}
-        </div>
-         <a href="#" className="arrow-1">
-             <span className="btn-circle">
-                 <i className={`fa-solid fa-chevron-${openIndex === 3 ? "up" : "down"}`}></i>
-             </span>
-         </a>
-     </button>
-
- </div>
-
- <div className="item">
-     <button className="question" onClick={() => toggleFaqs(4)}>
-     <div>
-            <h3 className='h3'>Can I create my own password that is easy for me to remember?</h3>
-            {openIndex === 4 && (
-                <div className='content'>
-                    <p className='p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id doloribus unde saepe nobis perferendis dicta.</p>
-                </div>
-            )}
-        </div>
-         <a href="#" className="arrow-1">
-             <span className="btn-circle">
-                 <i className={`fa-solid fa-chevron-${openIndex === 4 ? "up" : "down"}`}></i>
-             </span>
-         </a>
-     </button>
-
- </div>
-
- <div className="item">
-     <button className="question" onClick={() => toggleFaqs(5)}>
-     <div>
-            <h3 className='h3'>What happens if I forget or lose my password?</h3>
-            {openIndex === 5 && (
-                <div className='content'>
-                    <p className='p'>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            )}
-        </div>
-         <a href="#" className="arrow-1">
-             <span className="btn-circle">
-                 <i className={`fa-solid fa-chevron-${openIndex === 5 ? "up" : "down"}`}></i>
-             </span>
-         </a>
-     </button>
-
- </div>
+                ))}
 
 </div>
 
