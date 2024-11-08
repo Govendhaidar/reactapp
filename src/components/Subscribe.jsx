@@ -13,7 +13,7 @@ const Subscribe = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    alert('Thank You.')
+    
 
 
     const res = await fetch ('https://win24-assignment.azurewebsites.net/api/forms/subscribe', {
@@ -29,9 +29,9 @@ const Subscribe = () => {
 
 
     if (res.ok) {
-      console.log("din validering lyckades")
+      console.log("form valid")
     } else {
-      console.log("din validering misslyckades")
+      console.log("form invalid")
     }
 
  }
