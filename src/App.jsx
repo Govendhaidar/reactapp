@@ -1,6 +1,6 @@
 import './App.css'
 import Brands from './components/Brands'
-import Clients from './components/Clients'
+import ClientsTestimonial from './components/ClientsTestimonial'
 import Faqs from './components/Faqs'
 import Features from './components/Features'
 import Footer from './components/Footer'
@@ -22,7 +22,7 @@ function App() {
       <Features />
       <Howitworks />
       <MakeMoney />
-      <Clients />
+      <ClientsTestimonial />
       <Faqs />
       <Subscribe />
       <Footer />

@@ -29,13 +29,13 @@ const Faqs = () => {
 
  <div className="vänster">
      <div className="contact-box">
-         <i className="fa-solid fa-phone"></i>
+         <i className="fa-solid fa-phone-volume"></i>
          <p>Still have  questions?</p>
          <a className="contact" href="#">Contact us <i className="fa-solid fa-arrow-right"></i></a>
      </div>
 
      <div className="contact-box-1">
-         <i className="fa-solid fa-comment-dots"></i>
+         <i className="fa-solid fa-comment-dots fa-flip-horizontal"></i>
          <p>Don't like phone calls?</p>
          <a className="contact-1" href="#">Contact us <i className="fa-solid fa-arrow-right"></i></a>
      </div>
