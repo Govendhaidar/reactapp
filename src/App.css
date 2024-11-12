@@ -689,12 +689,13 @@ display: block;
                     margin: 0;
                     font-size: 22px;
                     font-weight: bold;
+                    color: var(--color-text);
                 }
 
                 .text p {
-                    color: var(--color-gray700);
+                    color: var(--color-gray600);
                     margin: 5px 0 0 0;
-                    font-size: 16px;
+                    font-size: 18px;
                 }
 
             
@@ -709,7 +710,6 @@ display: block;
     #how-it-works {
         background-color: var(--color-gray100);
         text-align: center;
-        /* background-color: var(--color-bg); */
         color: var(--color-text);
         padding: 3rem 0;
         
@@ -787,7 +787,7 @@ display: block;
     .p-1 {
         display: flex;
         margin-left: 20rem;
-        color: var(--color-gray700);
+        color: var(--color-gray600);
         font-size: 16px;
         font-weight: 400;
         gap: .5rem;
@@ -798,7 +798,7 @@ display: block;
     .p-2 {
         display: flex;
         margin-left: 20rem;
-        color: var(--color-gray700);
+        color: var(--color-gray600);
         font-size: 16px;
         font-weight: 400;
         gap: .5rem;
@@ -809,7 +809,7 @@ display: block;
     .p-3 {
         display: flex;
         margin-left: 20rem;
-        color: var(--color-gray700);
+        color: var(--color-gray600);
         font-size: 16px;
         font-weight: 400;
         gap: .5rem;
@@ -869,7 +869,7 @@ display: block;
 
             p {
                 padding-top: 1rem;
-                color: var(--color-gray700);
+                color: var(--color-gray600);
                 font-size: 16px;
                 font-weight: 400;
             }
