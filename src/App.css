@@ -1125,6 +1125,7 @@ justify-content: center;
         .btn-circle {
             background-color: var(--color-gray100);
             border: none;
+            cursor: pointer;
         }
 
         .btn-circle-1 {
@@ -1260,6 +1261,12 @@ justify-content: center;
                     }
                 }
             }
+        }
+
+        .circle-blue {
+            background-color: var(--color-primary) !important;
+            color: var(--color-white);
+            cursor: pointer;
         }
         
     

@@ -56,8 +56,11 @@ const Faqs = () => {
                 </div>
             )}
         </div>
-         <a href="#" className="arrow-1">
-             <span className="btn-circle">
+         <a className="arrow-1" onClick={ (e) => {
+            e.preventDefault();
+            toggleFaqs(index);
+         }}>
+             <span className={`btn-circle ${openIndex === index ? "circle-blue" : ""}`}>
                  <i className={`fa-solid fa-chevron-${openIndex === index ? "up" : "down"}`}></i>
              </span>
          </a>
