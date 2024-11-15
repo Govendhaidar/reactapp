@@ -1137,10 +1137,16 @@ justify-content: center;
             border-radius: 50%;
             border: none;
             background-color: var(--color-gray100);
-          
-           
+            
+            
         }
-
+        
+        .circle-blue {
+            background-color: var(--color-primary) !important;
+            color: var(--color-white);
+            cursor: pointer;
+        }
+        
         .arrow-2 {
             color: var(--color-text);
             position: relative;
@@ -1261,12 +1267,4 @@ justify-content: center;
                     }
                 }
             }
-        }
-
-        .circle-blue {
-            background-color: var(--color-primary) !important;
-            color: var(--color-white);
-            cursor: pointer;
-        }
-        
-    
+        } 
